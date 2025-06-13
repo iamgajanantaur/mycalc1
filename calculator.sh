@@ -3,6 +3,9 @@
 read -p "Enter first number: " num1
 read -p "Enter second number: " num2
 
+while true;
+do
+echo ""
 echo "---- Menu ----"
 echo "0. Exit"
 echo "--------------"
@@ -16,4 +19,8 @@ case $choice in
     exit 0
     ;;
 
+    *)
+    echo "Invalid choice. Please try again."
+
 esac
+done
